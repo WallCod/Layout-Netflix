@@ -5,7 +5,7 @@
 ![logo netflix](img/background.jpg)
 
 
-<a href="https://WallCod.github.io/Layout-Netflix/index.html" target="_blank">Clique aqui</a> para acessar o site.
+<a href="https://WallCod.github.io/Layout-Netflix/index.html"> Clique aqui</a> para acessar o site.
 
 ---
 
