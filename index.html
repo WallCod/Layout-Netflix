@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+
+<body>
+    <div class="header">
+        <!-------------------- NavBar ----------------->
+
+        <nav>
+            <img src="img/logo.png" alt="logo" class="logo">
+
+            <div>
+                <button class="language-btn" onclick="toggleDropdown()">
+                    English <img src="img/down-icon.png" alt="English">
+                </button>
+                <div id="language-dropdown" class="dropdown-content">
+                    <a href="#" onclick="changeLanguage('en')"> English</a>
+                    <a href="#" onclick="changeLanguage('pt')"> Português</a>
+                </div>
+
+                <button data-translate="signIn">
+                    Sign In
+                </button>
+            </div>
+        </nav>
+
+        <!---------------Header Content---------------->
+
+        <div class="header-content">
+            <h1 data-translate="headerTitle"> Unlimited movies, TV shows, and more</h1>
+            <h3 data-translate="headerSubtitle">Starts at BRL 20.90. Cancel anytime.</h3>
+            <p data-translate="headerDescription">Ready to watch ? Enter your email to create or restart your
+                membership.</p>
+
+            <form class="email-signup">
+                <input type="email" placeholder="Email address" data-translate="input" />
+                <button data-translate="button" type="submit">Get Started >
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!----------------Trending Now----------------->
+
+    <div class="trending-now">
+        <h2 data-translate="trending">Trending-Now</h2>
+        <button class="scroll-left">◀</button>
+        <div class="thumbnails">
+            <div class="thumbnail"><img src="img/large-movie1.jpg" alt="Luis Miguel"></div>
+            <div class="thumbnail"><img src="img/large-movie2.jpg" alt="Lucifer"></div>
+            <div class="thumbnail"><img src="img/large-movie3.jpg" alt="Haunted"></div>
+            <div class="thumbnail"><img src="img/large-movie4.jpg" alt="Who Killed Sara?"></div>
+            <div class="thumbnail"><img src="img/large-movie5.jpg" alt="Cobra Kai"></div>
+            <div class="thumbnail"><img src="img/large-movie6.jpg" alt="Elite"></div>
+            <div class="thumbnail"><img src="img/large-movie7.jpg" alt="Transformers"></div>
+            <div class="thumbnail"><img src="img/large-movie8.jpg" alt="The Umbrella Academy"></div>
+            <div class="thumbnail"><img src="img/large-movie9.jpg" alt="Pokémon"></div>
+            <div class="thumbnail"><img src="img/large-movie99.jpg" alt="Star Wars"></div>
+        </div>
+        <button class="scroll-right">▶</button>
+    </div>
+
+
+
+    <!-----------------Faq Section------------------>
+
+    <div class="faq">
+        <h2 data-translate="questions"> Frequently Asked Questions </h2>
+
+        <ul class="faq-menu">
+            <li>
+                <input type="checkbox" name="faq-menu" id="first">
+                <label for="first" data-translate="first">What is Netflix?</label>
+                <div class="content">
+                    <p data-translate="first1">Netflix is a streaming service that offers a wide variety of
+                        award-winning TV shows, movies,
+                        anime, documentaries, and more on thousands of internet-connected devices.
+
+                        You can watch as much as you want, whenever you want – all for one low monthly price. There's
+                        always something new to discover and new TV shows and movies are added every week!</p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" name="faq-menu" id="second">
+                <label for="second" data-translate="second">How much does Netflix cost? </label>
+                <div class="content">
+                    <p data-translate="second1">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming
+                        device, all for one
+                        fixed monthly fee. Plans range from BRL 20.90 to BRL 59.90 a month. No extra costs, no
+                        contracts.</p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" name="faq-menu" id="third">
+                <label for="third" data-translate="third">Where can I watch ?</label>
+                <div class="content">
+                    <p data-translate="third1">Watch anywhere, anytime. Sign in with your Netflix account to watch
+                        instantly on the web at
+                        netflix.com from your personal computer or on any internet-connected device that offers the
+                        Netflix app, including smart TVs, smartphones, tablets, streaming media players and game
+                        consoles.
+
+                        You can also download your favorite shows with the iOS or Android app. Use downloads to watch
+                        while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" name="faq-menu" id="fourth">
+                <label for="fourth" data-translate="fourth"> How do I cancel ?</label>
+                <div class="content">
+                    <p data-translate="fourth1">Netflix is flexible. There are no pesky contracts and no commitments.
+                        You can easily cancel your
+                        account online in two clicks. There are no cancellation fees – start or stop your account
+                        anytime.</p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" name="faq-menu" id="fifth">
+                <label for="fifth" data-translate="fifth"> What can I watch on Netflix ?</label>
+                <div class="content">
+                    <p data-translate="fifth1">Netflix has an extensive library of feature films, documentaries, TV
+                        shows, anime, award-winning
+                        Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" name="faq-menu" id="sixth">
+                <label for="sixth" data-translate="sixth">Is Netflix good for Kids?</label>
+                <div class="content">
+                    <p data-translate="sixth1">The Netflix Kids experience is included in your membership to give
+                        parents control while kids enjoy family-friendly TV shows and movies in their own space.
+
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity
+                        rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                </div>
+            </li>
+        </ul>
+        <small data-translate="small">
+            Ready to watch ? Enter yout email to create or restart your membership.
+        </small>
+        <form class="email-signup1">
+            <input type="email" placeholder="Email Address" data-translate="input1" />
+            <button data-translate="button1" type="submit">Get Started ></button>
+        </form>
+    </div>
+
+    <!-------Footer------->
+
+    <div class="footer">
+        <h2 data-translate="questions1"> Questions? Call 0800 591 3517 </h2>
+        <div class="row">
+            <div class="col">
+                <a href="#" data-translate="faq">FAQ</a>
+                <a href="#" data-translate="investor">Investor Relations</a>
+                <a href="#" data-translate="ways"> Ways to Watch</a>
+                <a href="#" data-translate="corporate"> Corporate Information</a>
+                <a href="#" data-translate="only"> Only on Netflix</a>
+            </div>
+
+            <div class="col">
+                <a href="#" data-translate="help"> Help Center</a>
+                <a href="#" data-translate="jobs"> Jobs</a>
+                <a href="#" data-translate="terms"> Terms of Use</a>
+                <a href="#" data-translate="contact"> Contact Us</a>
+            </div>
+
+            <div class="col">
+                <a href="#" data-translate="account"> Account</a>
+                <a href="#" data-translate="redeem"> Redeem Gift Cards</a>
+                <a href="#" data-translate="privacy"> Privacy</a>
+                <a href="#" data-translate="speed"> Speed Test</a>
+            </div>
+
+            <div class="col">
+                <a href="#" data-translate="media"> Media Center</a>
+                <a href="#" data-translate="buy"> Buy Gift Cards</a>
+                <a href="#" data-translate="cookie"> Cookie Preferences</a>
+                <a href="#" data-translate="legal"> Legal Notices</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="copyright-text" data-translate="brasil"> Netflix Brazil
+    </p>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
