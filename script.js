@@ -42,7 +42,7 @@ const translations = {
         buy: 'Buy Prepaid Card',
         cookie: 'Cookie Preferences',
         legal: 'Legal Notices',
-        brazil: 'Netflix Brazil'
+        brasil: 'Netflix Brazil'
         
         //Adicione mais traduções conforme necessário.
     },
